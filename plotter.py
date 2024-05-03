@@ -61,7 +61,7 @@ def draw_curve(points):
 
     # Display coefficients of the Bezier curve
     curve_coefficients_text = font.render(f"Curve Coefficients: {list(bernstein(len(points)))}", True, RED)
-    screen.blit(curve_coefficients_text, (10, 50))
+    screen.blit(curve_coefficients_text, (10, 70))
 
     # Display invert status
     invert_text = font.render("Invert: On" if invert else "Invert: Off", True, RED)
