@@ -20,7 +20,7 @@ U-RCS is a powerful tool designed to assist gamers in managing weapon sprays eff
 - Pygame
 
 ## Installation
-1. Clone the repository: git clone https://github.com/your-username/U-RCS.git
+1. Clone the repository: git clone https://github.com/luinbytes/U-RCS.git
 2. Install Pygame: pip install pygame
 
 ## Usage
