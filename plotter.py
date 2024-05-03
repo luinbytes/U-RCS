@@ -7,7 +7,7 @@ pygame.init()
 
 # Set up display
 WINDOW_SIZE = (1920, 1080)
-screen = pygame.display.set_mode(WINDOW_SIZE, flags=pygame.SRCALPHA)  # Use SRCALPHA flag for transparency
+screen = pygame.display.set_mode((WINDOW_SIZE), pygame.FULLSCREEN)  # Use SRCALPHA flag for transparency
 pygame.display.set_caption("RCS plotter tester B)")
 
 # Colors
@@ -19,6 +19,7 @@ RED = (255, 0, 0)
 points = []  # List to store recorded points
 drawing = True  # Set drawing mode to True initially
 invert = False  # Set invert mode to False initially
+window_size_toggle = False  # Set window size toggle to False initially
 
 # Font
 font = pygame.font.Font(None, 20)
@@ -108,6 +109,14 @@ while running:
                     drawing = False
             elif event.key == K_i:  # Toggle invert mode when 'i' key is pressed
                 invert = not invert
+            elif event.key == K_f:  # Toggle window size between 1920x1080 and 800x600 when 'f' key is pressed
+                window_size_toggle = not window_size_toggle
+                if window_size_toggle:
+                    WINDOW_SIZE = (800, 600)
+                    screen = pygame.display.set_mode(WINDOW_SIZE, flags=pygame.SRCALPHA)
+                else:
+                    WINDOW_SIZE = (1920, 1080)
+                    screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
     # Draw points
     for point in points:
