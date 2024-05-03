@@ -5,7 +5,7 @@ U-RCS is a powerful tool designed to assist gamers in managing weapon sprays eff
 ## Features
 - **Intuitive Interface**: U-RCS features a user-friendly interface that simplifies the process of mapping out weapon sprays.
 - **Bezier Curve Generation**: The program automatically generates smooth Bezier curves based on the plotted points, ensuring precise control over weapon recoil.
-- **Invert Mode**: Toggle invert mode to adjust curves for different preferences or shooting scenarios.
+- **Invert Mode**: Toggle invert mode to see the finished product & to save the curve coords to a txt file.
 - **Fullscreen Support**: Enjoy a distraction-free experience with fullscreen mode, providing ample space for plotting and analyzing recoil patterns.
 - **Export Functionality**: Save plotted points and generated curves for later use in other gaming software or analysis.
 
